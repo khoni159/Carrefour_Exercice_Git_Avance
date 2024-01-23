@@ -17,16 +17,10 @@ namespace Carrefour_Exercice_Git_Avance
 
         public void Freiner()
         {
-            int freinage = 0;
             if (Vitesse < 0)
             {
-                freinage = Math.Min(2, -Vitesse);
-            }
-            else if (Vitesse > 0)
-            {
-                freinage = Math.Max(-2, -Vitesse);
-            }
-            Vitesse += freinage;
+                Vitesse -= 2;
+            } 
         }
 
         public void Reculer()
