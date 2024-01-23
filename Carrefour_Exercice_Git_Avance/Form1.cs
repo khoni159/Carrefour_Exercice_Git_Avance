@@ -17,7 +17,24 @@ namespace Carrefour_Exercice_Git_Avance
 
         public void Freiner()
         {
-            Vitesse -= 1;
+            int freinage = 0;
+            if (Vitesse < 0)
+            {
+                freinage = Math.Min(2, -Vitesse);
+            }
+            else if (Vitesse > 0)
+            {
+                freinage = Math.Max(-2, -Vitesse);
+            }
+            Vitesse += freinage;
+        }
+
+        public void Reculer()
+        {
+            if (Vitesse <= 0)
+            {
+                Vitesse -= 1;
+            }
         }
 
         private void button_afficherVitesse_Click(object sender, EventArgs e)
@@ -33,6 +50,11 @@ namespace Carrefour_Exercice_Git_Avance
         private void button_accelerer_Click(object sender, EventArgs e)
         {
             Accelerer();
+        }
+
+        private void button_reculer_Click(object sender, EventArgs e)
+        {
+            Reculer();
         }
     }
 }

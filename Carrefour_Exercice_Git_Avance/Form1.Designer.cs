@@ -1,4 +1,5 @@
 ﻿
+
 namespace Carrefour_Exercice_Git_Avance
 {
     partial class Form1
@@ -69,6 +70,15 @@ namespace Carrefour_Exercice_Git_Avance
             // 
             button_reculer.Location = new Point(167, 17);
             button_reculer.Name = "button_reculer";
+            button_reculer.Size = new Size(149, 29);
+            button_reculer.TabIndex = 3;
+            button_reculer.Text = "Reculer";
+            button_reculer.UseVisualStyleBackColor = true;
+            button_reculer.Click += button_reculer_Click;
+
+            // 
+            // Form1
+            // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(324, 136);
@@ -82,6 +92,8 @@ namespace Carrefour_Exercice_Git_Avance
         }
 
         
+
+
 
         #endregion
         private Button button_accelerer;
