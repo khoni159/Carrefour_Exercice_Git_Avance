@@ -2,8 +2,8 @@ namespace Carrefour_Exercice_Git_Avance
 {
     public partial class Form1 : Form
     {
-        public string Couleur;
-        public int AnneeConstruction;
+        public string Couleur = "Rouge";
+        public int AnneeConstruction = 2024;
         public int Vitesse = 0;
         public Form1()
         {
