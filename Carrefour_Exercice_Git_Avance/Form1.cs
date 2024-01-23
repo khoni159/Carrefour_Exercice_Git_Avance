@@ -19,5 +19,20 @@ namespace Carrefour_Exercice_Git_Avance
         {
             Vitesse -= 1;
         }
+
+        private void button_afficherVitesse_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(Vitesse.ToString());
+        }
+
+        private void button_freiner_Click(object sender, EventArgs e)
+        {
+            Freiner();
+        }
+
+        private void button_accelerer_Click(object sender, EventArgs e)
+        {
+            Accelerer();
+        }
     }
 }
