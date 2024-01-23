@@ -17,7 +17,7 @@ namespace Carrefour_Exercice_Git_Avance
 
         public void Freiner()
         {
-            if (Vitesse < 0)
+            if (Vitesse > 0)
             {
                 Vitesse -= 2;
             } 
