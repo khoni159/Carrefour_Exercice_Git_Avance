@@ -45,7 +45,7 @@ namespace Carrefour_Exercice_Git_Avance
 
         private void button_afficherVitesse_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(Vitesse.ToString());
+            MessageBox.Show( Vitesse.ToString() + "Km/h ");
         }
 
         private void button_freiner_Click(object sender, EventArgs e)
